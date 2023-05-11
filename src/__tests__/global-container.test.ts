@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/interface-name-prefix */
-
 import {inject, injectable, registry, singleton} from "../decorators";
 import {
   instanceCachingFactory,
@@ -838,7 +836,7 @@ describe("dispose", () => {
   class Baz implements Disposable {
     disposed = false;
     async dispose(): Promise<void> {
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         process.nextTick(() => {
           this.disposed = true;
           resolve();

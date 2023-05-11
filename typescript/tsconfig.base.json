@@ -15,7 +15,8 @@
     "outDir": "dist",
     "stripInternal": true,
     "moduleResolution": "node",
-    "importHelpers": true
+    "importHelpers": true,
+    "skipLibCheck": true
   },
   "include": ["../src/"],
   "exclude": ["../src/__tests__"]
